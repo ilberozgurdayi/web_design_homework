@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .duyuru-form, .urun-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .duyuru-form label, .urun-form label {
+            margin-bottom: 8px;
+        }
+
+        .duyuru-form input, .duyuru-form textarea,
+        .urun-form input, .urun-form textarea,
+        .duyuru-form button, .urun-form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .duyuru-form button, .urun-form button {
+            background-color: #444;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .duyuru-form button:hover, .urun-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="admin giriş.html"> <h1>anasayfa</h1></a>
+    </header>
+
+    <nav>
+        <a href="ürün ekle.html">Ürün Ekle</a>
+        <a href="istatistikler.html">İstatistikler</a>
+        <a href="kampanya.html">Kampanya Ekle</a>
+        <a href="ürün ekle.html">Ürün Ekle</a>
+        <a href="ürünsil.html">ürünsil</a>
+        <a href="#">Sayfaları Düzenle</a>
+        <a href="duyurekle.html">duyuru ekle</a>
+       
+    </nav>
+
+
+
+    <section>
+        <div class="duyuru-form">
+            <form>
+                <label for="duyuruBaslik">Ürün Adı:</label>
+                <input type="text" id="duyuruBaslik" name="duyuruBaslik" required>
+
+                <label for="duyuruMetni">Ürün Açıklaması:</label>
+                <textarea id="duyuruMetni" name="duyuruMetni" rows="4" required></textarea>
+                <label for="urunFiyati">eski Ürün Fiyatı:</label>
+                <input type="text" id="urunFiyati" name="urunFiyati" required>
+                <label for="urunFiyati">Ürün Fiyatı:</label>
+                <input type="text" id="urunFiyati" name="urunFiyati" required>
+
+                <label for="fotoEkle">Fotoğraf Ekle:</label>
+                <input type="file" id="fotoEkle" name="fotoEkle">
+        
+            </form>
+
+                <button type="submit">kampanya ekle</button>
+                <p><strong>merak etmeyin siz kampanya eklediğinizde önceki ürün silini</strong>r</p>
+            </form>
+        </div>
+
+    
+    </section>
+
+    <footer>
+        &copy; 2023 Anasayfa
+    </footer>
+
+</body>
+</html>

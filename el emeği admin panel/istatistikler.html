@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İstatistikler</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .statistics-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .statistic-card {
+            flex: 0 1 calc(30% - 20px);
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+        }
+
+        .statistic-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .statistic-number {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .chart {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .chart-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .bar {
+            background-color: #3498db;
+            margin-bottom: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .bar-label {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="admin giriş.html"> <h1>anasayfa</h1></a>
+    </header>
+
+
+    <nav>
+        <a href="ürün ekle.html">Ürün Ekle</a>
+        <a href="istatistikler.html">İstatistikler</a>
+        <a href="kampanya.html">Kampanya Ekle</a>
+        <a href="ürün ekle.html">Ürün Ekle</a>
+        <a href="ürünsil.html">ürünsil</a>
+        <a href="#">Sayfaları Düzenle</a>
+        <a href="duyurekle.html">duyuru ekle</a>
+       
+    </nav>
+
+
+    <section>
+        <div class="statistics-container">
+            <div class="statistic-card">
+                <div class="statistic-title">Toplam Ürün Sayısı</div>
+                <div class="statistic-number">150</div>
+                <div class="chart">
+                    <!-- İstatistik şeması buraya eklenebilir --> <div class="chart-container">
+        <div class="bar" style="height: 150px;"> <!-- Değer: 150 -->
+            <div class="bar-label">2023</div>
+        </div>
+
+        <div class="bar" style="height: 120px;"> <!-- Değer: 120 -->
+            <div class="bar-label">2022</div>
+        </div>
+
+        <div class="bar" style="height: 90px;"> <!-- Değer: 90 -->
+            <div class="bar-label">2021</div>
+        </div>
+    </div>
+                </div>
+            </div>
+
+            <div class="statistic-card">
+                <div class="statistic-title">Toplam Gelir</div>
+                <div class="statistic-number">$500,000</div>
+                <div class="chart">
+                    <!-- İstatistik şeması buraya eklenebilir -->
+                    <div class="chart-container">
+                        <div class="bar" style="height: 180px;"> <!-- Değer: 150 -->
+                            <div class="bar-label">2023</div>
+                        </div>
+                
+                        <div class="bar" style="height: 120px;"> <!-- Değer: 120 -->
+                            <div class="bar-label">2022</div>
+                        </div>
+                
+                        <div class="bar" style="height: 90px;"> <!-- Değer: 90 -->
+                            <div class="bar-label">2021</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="statistic-card">
+                <div class="statistic-title">Kampanya Başarı Oranı</div>
+                <div class="statistic-number">75%</div>
+                <div class="chart">
+                    <!-- İstatistik şeması buraya eklenebilir -->
+                    <div class="chart-container">
+                        <div class="bar" style="height: 100px;"> <!-- Değer: 150 -->
+                            <div class="bar-label">2023</div>
+                        </div>
+                
+                        <div class="bar" style="height: 120px;"> <!-- Değer: 120 -->
+                            <div class="bar-label">2022</div>
+                        </div>
+                
+                        <div class="bar" style="height: 90px;"> <!-- Değer: 90 -->
+                            <div class="bar-label">2021</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 Anasayfa
+    </footer>
+
+</body>
+</html>
